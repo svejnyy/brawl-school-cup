@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars School Cup 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body { 
+            background-color: #020617; 
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-gradient-dark { 
+            background: radial-gradient(circle at top, #0f172a 0%, #020617 100%); 
+        }
+        .brawl-card { 
+            background: rgba(30, 41, 59, 0.4);
+            border: 1px solid rgba(59, 130, 246, 0.2); 
+            transition: all 0.3s ease;
+        }
+        .brawl-card:hover { 
+            transform: translateY(-5px); 
+            border-color: #3b82f6; 
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gradient-dark text-gray-100 min-h-screen">
+
+    <nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center font-black italic text-white text-xl shadow-lg shadow-blue-900/40">BS</div>
+                <h1 class="text-2xl font-black tracking-tighter uppercase italic text-white">School <span class="text-blue-500">Cup</span></h1>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 font-bold uppercase text-sm tracking-widest">
+                <a href="#stats" class="hover:text-blue-400 transition">Hráči</a>
+                <a href="#prizes" class="hover:text-blue-400 transition">Ceny</a>
+                <a href="#register" class="bg-blue-600 px-8 py-3 rounded-full hover:bg-blue-500 transition shadow-lg shadow-blue-600/20 active:scale-95">Registrace</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative py-24 px-5 text-center overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full"></div>
+        
+        <div class="relative z-10">
+            <div class="inline-block px-6 py-2 bg-blue-950/50 border border-blue-500/30 rounded-full text-blue-400 text-xs font-black uppercase tracking-[0.2em] mb-8">
+                🚀 Season 1: The Awakening
+            </div>
+            <h2 class="text-6xl md:text-9xl font-black mb-6 italic uppercase tracking-tighter text-glow">Brawl <span class="text-blue-600 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-700">Stars</span></h2>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">Ukaž své skilly v největším školním turnaji. Registruj se a vyhraj gemy!</p>
+            
+            <div class="flex justify-center gap-4 text-center">
+                <div class="brawl-card p-6 rounded-2xl min-w-[100px]">
+                    <div id="days" class="text-4xl font-black text-white">14</div>
+                    <div class="text-[10px] text-gray-500 uppercase font-bold mt-1">Dny</div>
+                </div>
+                <div class="brawl-card p-6 rounded-2xl min-w-[100px]">
+                    <div id="hours" class="text-4xl font-black text-white">00</div>
+                    <div class="text-[10px] text-gray-500 uppercase font-bold mt-1">Hodiny</div>
+                </div>
+                <div class="brawl-card p-6 rounded-2xl min-w-[100px]">
+                    <div id="minutes" class="text-4xl font-black text-white">00</div>
+                    <div class="text-[10px] text-gray-500 uppercase font-bold mt-1">Minuty</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="stats" class="max-w-6xl mx-auto px-5 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="brawl-card p-10 rounded-3xl text-center">
+            <div class="w-16 h-16 bg-blue-600/20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-blue-500 text-3xl">
+                <i class="fas fa-user-plus"></i>
+            </div>
+            <h3 class="text-5xl font-black mb-2" id="playerCount text-glow">42</h3>
+            <p class="text-gray-500 uppercase text-xs font-black tracking-widest">Aktivních hráčů</p>
+        </div>
+        <div class="brawl-card p-10 rounded-3xl text-center border-blue-500/40">
+            <div class="w-16 h-16 bg-yellow-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-yellow-500 text-3xl">
+                <i class="fas fa-gem"></i>
+            </div>
+            <h3 class="text-5xl font-black mb-2 text-yellow-500">2 000</h3>
+            <p class="text-gray-500 uppercase text-xs font-black tracking-widest">Celkem gemů</p>
+        </div>
+        <div class="brawl-card p-10 rounded-3xl text-center">
+            <div class="w-16 h-16 bg-red-600/20 rounded-2xl flex items-center justify-center mx-auto mb-6 text-red-500 text-3xl">
+                <i class="fas fa-map-pin"></i>
+            </div>
+            <h3 class="text-5xl font-black mb-2">AULA SŠ</h3>
+            <p class="text-gray-500 uppercase text-xs font-black tracking-widest">Battle Ground</p>
+        </div>
+    </section>
+
+    <section id="prizes" class="max-w-4xl mx-auto px-5 py-20">
+        <h3 class="text-4xl font-black mb-12 text-center uppercase italic text-glow">Odměny pro elitu</h3>
+        <div class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/20 backdrop-blur-xl">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-blue-600/10 text-blue-400 uppercase text-xs font-black tracking-[0.2em]">
+                        <th class="p-6 border-b border-slate-800">Pořadí</th>
+                        <th class="p-6 border-b border-slate-800">Odměna</th>
+                        <th class="p-6 border-b border-slate-800">Extra Bonus</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-300 font-bold">
+                    <tr class="hover:bg-blue-500/5 transition group">
+                        <td class="p-6 border-b border-slate-800 text-yellow-500 uppercase">1. Místo</td>
+                        <td class="p-6 border-b border-slate-800 text-2xl font-black italic">1 000 💎</td>
+                        <td class="p-6 border-b border-slate-800"><span class="bg-yellow-500/10 text-yellow-500 px-3 py-1 rounded text-xs uppercase">Legendary Drop</span></td>
+                    </tr>
+                    <tr class="hover:bg-blue-500/5 transition">
+                        <td class="p-6 border-b border-slate-800 text-slate-400 uppercase">2. Místo</td>
+                        <td class="p-6 border-b border-slate-800 text-xl font-black italic">600 💎</td>
+                        <td class="p-6 border-b border-slate-800 italic text-sm text-gray-500 font-normal text-slate-500 italic">Mythic Drop</td>
+                    </tr>
+                    <tr class="hover:bg-blue-500/5 transition">
+                        <td class="p-6 border-b border-slate-800 text-orange-600 uppercase">3. Místo</td>
+                        <td class="p-6 border-b border-slate-800 text-xl font-black italic">400 💎</td>
+                        <td class="p-6 border-b border-slate-800 italic text-sm text-gray-500 font-normal text-slate-500 italic">Epic Drop</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="register" class="max-w-2xl mx-auto px-5 py-24">
+        <div class="relative p-10 rounded-[2.5rem] bg-gradient-to-b from-blue-900/30 to-slate-900 border border-blue-500/20 overflow-hidden shadow-2xl">
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-blue-600/10 blur-[80px] rounded-full"></div>
+            
+            <h3 class="text-4xl font-black mb-8 text-center uppercase italic relative z-10">Vstup do arény</h3>
+            <form id="regForm" class="space-y-6 relative z-10">
+                <div class="space-y-2">
+                    <label class="block text-[10px] font-black uppercase tracking-widest text-blue-400 ml-1">In-Game Nickname</label>
+                    <input type="text" id="nick" class="w-full bg-slate-950/50 border border-slate-800 p-5 rounded-2xl focus:border-blue-500 outline-none transition font-bold" placeholder="Např. Shelly_Master" required>
+                </div>
+                <div class="space-y-2">
+                    <label class="block text-[10px] font-black uppercase tracking-widest text-blue-400 ml-1">Player Tag</label>
+                    <input type="text" id="tag" class="w-full bg-slate-950/50 border border-slate-800 p-5 rounded-2xl focus:border-blue-500 outline-none transition font-bold" placeholder="#ABC12345" required>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-blue-500 transition-all hover:scale-[1.02] shadow-xl shadow-blue-600/30 active:scale-95">Potvrdit Registraci</button>
+            </form>
+            <div id="successMsg" class="hidden mt-6 p-6 bg-green-500/10 border border-green-500/50 rounded-2xl text-center text-green-400 animate-bounce font-bold">
+                🎉 Registrace úspěšná! Vidíme se v aréně.
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-600 border-t border-slate-900">
+        <p class="text-xs font-bold tracking-[0.3em] uppercase mb-4">&copy; 2026 Brawl Stars School Cup</p>
+        <div class="flex justify-center gap-6 text-xl">
+            <i class="fab fa-discord hover:text-blue-400 cursor-pointer transition"></i>
+            <i class="fab fa-instagram hover:text-pink-400 cursor-pointer transition"></i>
+            <i class="fab fa-youtube hover:text-red-500 cursor-pointer transition"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
